@@ -1,0 +1,17 @@
+.fixed-bg {
+  background-image: url("/Images/araku.jpg");
+  min-height: 910px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.2-bg {
+  background-image: url("/Images/akv.jpg");
+  min-height: 910px;
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+  width: 50%;
+  padding: 15px 23px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 3px solid #ccc;
+  border-radius: 11px;
+  box-sizing: border-box;
+}
+
+input[type=date], select {
+  width: 50%;
+  padding: 15px 23px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 3px solid #ccc;
+  border-radius: 11px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 50%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 23px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 460px;
+  margin-left: 450px;
+}
+</style>
+<body background="t.jpeg">
+
+
+
+<div>
+
+<marquee><h1 style="color:darkblue">ACHIEVEMENT ENTRY FORM</h1></marquee><br>
+  <form action="studentinsertp.php" method="post">
+    
+   <b><label for="rno">Roll No</label></b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="text" id="rno" name="rollno" placeholder="roll number..." required><br>
+	<b><label for="sname">Student Name</label></b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="text" id="sname" name="studentname" placeholder="Your name.." required>
+    <br>
+    <b> <label for="br">Branch</label></b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <select id="br" name="branch">
+      <option value="cse">Computer Science</option>
+      <option value="ece">Electronics And Communication</option>
+      <option value="eee">Electrical And Electronics</option>
+      <option value="mech">Mechanical</option>
+      <option value="it">Information Technology</option>
+    </select><br>
+	
+	<b><label for="yr">Year</label></b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <select id="yr" name="year">
+      <option value="1">1st Year</option>
+      <option value="2">2nd Year</option>
+      <option value="3">3rd Year</option>
+      <option value="4">4th Year</option>
+    </select><br>
+	
+	<b><label for="se">Section</label></b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <select id="sec" name="section">
+      <option value="a">A</option>
+      <option value="b">B</option>
+      <option value="c">C</option>
+    </select><br>
+
+   
+   
+    <b><label for="ename">Event Name</label></b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="text" id="ename" name="eventname" placeholder="Event..." required><br>
+
+     <b><label for="oname">Organization Name</label></b>
+    <input type="text" id="oname" name="orgname" placeholder="Organization..." required><br>
+
+    <b><label for="ct">Category</label></b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <select id="ct" name="category">
+      <option value="national">National Level</option>
+      <option value="state">State Level</option>
+      <option value="district">District Level</option>
+    </select><br>
+
+    <b><label for="dt" >Date</label></b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="date" name="date" required><br>
+    
+    <b><label for="st">Status</label></b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="text" id="st" name="status" placeholder="Status..." required><br><br>
+  
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="submit" value="Submit">
+    
+  </form>
+</div>
+
+</body>
+</html>

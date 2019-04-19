@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>HOME</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="a.css">
+<link rel="stylesheet" href="b.css">
+<link rel="stylesheet" href="c.css">
+<link rel="stylesheet" href="bootstrap-4.0.0/css/bootstrap.min.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-grey w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-blue">  <i class="fa fa-home"></i> Home
+</a>
+    <a href="login.html"class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"> Login</a>
+   
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About</a>
+    <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Team</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Login</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Search</a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large">About</a>
+    <a href="#team" class="w3-bar-item w3-button w3-padding-large">Team</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-black w3-center" style="padding:128px 16px ;background-color=#33ccff;">
+  <h1 class="w3-margin w3-jumbo"><font face="Times New Roman">Student Achievements Automatic <br>Management System</font></h1>
+  
+  
+
+</header>
+
+<!-- First Grid -->
+
+<div class="w3-row-padding w3-padding-64 w3-container" id="about">
+  <div class="w3-content" >
+    <div class="w3-twothird" >
+      <h1>About The Project</h1>
+      <h5 class="w3-padding-32">Project's main objective is to maintain students achievements of a particular college in all the fields and to make retrive of data more easier
+	 .</h5>
+
+      <p class="w3-text-grey">It is pride of the college that their students have won medals or prizes in any competitons. So, they are willing to storethe the students achivements
+	  as the years goes on the number of records increases and it is not easy to handle them an searching of records with particular requirements is much more complex. The software reduces all these problems and helps to manage student achievements </p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+    </div>
+  </div>
+</div>
+
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" id="team">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>Our team - Software Comedians</h1>
+      <h5 class="w3-padding-32">Our team name seems to be funny but it resembles ourselves. We entered into the software field with very less knowledge the pleople around us criticized us as comedians but we did not lose our hope and with lot of entusiasm we proved ourselves to remember our journey we named our team as software comedians. </h5>
+
+      <p class="w3-text-grey">Our team members :<br>
+	 1. A. Anil Krishna
+	 <br>2. T.Sri Akhil<br>3.Y. Vinod Kumar<br>4. D.Sai Ganesh Patnaik</p>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge"><b>Success is not a destination, It's a journey.</b></h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <a href=""> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ 
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

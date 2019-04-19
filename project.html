@@ -1,0 +1,156 @@
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #776;
+}
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 70%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: darkgreen;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px black;
+text-decoration: none;
+width: 40%;
+}
+
+.button:hover {background-color: black}
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 70%;
+}
+
+#Home {background-color: grey;}
+#News {background-color: grey;}
+
+</style>
+</style>
+</head>
+<body bgcolor="black">
+<img src="cse.jpeg" width=100% >
+<ul>
+  <li><a class="active" href="project.html">Home</a></li>
+  <li><a href="#">Achievements</a></li>
+  <li><a href="sidenav.html">Login</a></li>
+</ul>
+
+
+<marquee>
+<img src="abc.jpeg" height="250">
+<img src="anu.jpeg" height="250">
+<img src="cursor.jpg" height="250">
+<img src="e.jpeg" height="250">
+<img src="Code.jpeg" height="250">
+</marquee>
+
+
+
+
+<button class="button" onclick="openPage('Home', this, 'red')" id="defaultOpen">About Department</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<button class="button" onclick="openPage('News', this, 'red')"  >Vision And Mission</button>
+
+
+<div id="Home" class="tabcontent">
+ <br><center><h1>ABOUT DEPARTMENT</h1></center>
+  <pre>
+  <h2>The Department has marked a steady growth in terms of human recourses, Laboratories and space. It has 39 qualified teachers<br> (Meeting the norms of AICTE) headed by Dr.R.Sivaranjani with 16 years of experience in teaching.
+
+The Department of Computer Science and Engineering presently offers the following program.</h2>
+
+<h1>STUDENT INTAKE:</h1>
+<h2>       Intake: 60 initially (2001-02)
+
+       120 from 2008-09
+
+       180 from 2015-16
+
+       Lateral Entry : 20% at II year
+
+ M.TECH
+
+       Intake	: 18 From 2010 – 2011
+
+       Specialization	:	Computer Science & Technology</h2>
+
+ </pre>
+  
+</div>
+
+<div id="News" class="tabcontent">
+  <br><center><h1>VISION AND MISSION</h1></center><br>
+  <h2 style="color: #3c3c3c"> VISION OF DEPARTMENT </h2><br>
+ <h3 style="margin-left: 100px"> Our vision is to emerge as a world class Computer Science and <br>Engineering department through excellent teaching and strong research<br> environment that responds swiftly to the challenges of changing computer<br> science technology and addresses technological needs of the<br> stakeholders.</h3> 
+<br><h2 style="color: #3c3c3c">MISSION OF DEPARTMENT </h2><br> 
+<h3 style="margin-left: 100px">To enable our students to master the fundamental principles of computing<br> and to develop in them the skills needed to solve practical problems using<br> contemporary computer-based technologies and practices to cultivate a<br> community of professionals who will serve the public as resources on<br> state-of-the-art computing science and information technology.</h3>
+<br></div>
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("button");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>
+
+
+
+
